@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>USIU First-Year Companion (v1)</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>🎓 USIU First-Year Companion</h1>
+        <p>Your Quick Orientation Helper</p>
+    </header>
+    
+    <main>
+        <section>
+            <h2 id="greeting">Hello, Future Leader!</h2>
+            <p class="welcome-text">Welcome to the United States International University-Africa community. This companion tool will help you estimate your weekly campus expenses and get you started on your USIU journey.</p>
+            
+            <div class="info-box">
+                <p><strong>💡 Quick Tip:</strong> Use realistic numbers based on your commute from areas like Thika Road, Westlands, or Ngong Road to get accurate estimates!</p>
+            </div>
+            
+            <button id="run">🧮 Run Estimator</button>
+            <button id="theme">🌓 Toggle Theme</button>
+            <button id="reset">🔄 Reset</button>
+        </section>
+        
+        <section>
+            <h3>📊 Your Weekly Summary</h3>
+            <pre id="summary">Click "Run Estimator" above to calculate your weekly campus costs.
+
+We'll ask you about:
+• Days you'll be on campus per week
+• Your transport costs (matatu, Uber, etc.)
+• Snack purchases per day
+• Average snack prices
+
+Then we'll show you your total weekly costs and a money-saving tip!</pre>
+        </section>
+        
+        <section>
+            <h3>📝 About This Tool</h3>
+            <p class="welcome-text">This estimator helps you budget for your time on campus. Remember, these are estimates—your actual costs may vary. Planning ahead helps you manage your finances better throughout the semester!</p>
+        </section>
+    </main>
+    
+    <footer>
+        <small>© 2025 USIU-Africa Student Affairs (Demo v1) | Built with ❤️ for USIU Students</small>
+    </footer>
+
+    <script src="script.js"></script>
+    
+   
+    <script>
+        
+        document.getElementById("run").addEventListener("click", runEstimator);
+        document.getElementById("theme").addEventListener("click", toggleTheme);
+        document.getElementById("reset").addEventListener("click", resetEstimator);
+        
+        
+        console.log("✅ USIU First-Year Companion v1 loaded successfully");
+        console.log("Page loaded at:", new Date().toLocaleString());
+    </script>
+</body>
+</html>
